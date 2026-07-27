@@ -1,5 +1,4 @@
 @import "tailwindcss";
-
 :root {
   --purple: #42127f;
   --purple-deep: #21074a;
@@ -170,4 +169,23 @@ footer a { color: var(--lavender); }
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
+}
+
+.brand img {
+  width: 164px;
+  height: 72px;
+  object-fit: contain;
+  object-position: left center;
+}
+.brand span {
+  padding-left: 16px;
+  border-left: 1px solid #d9cde3;
+}
+.wall h2 {
+  max-width: 930px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 620px) {
+  .brand img { width: 112px; height: 58px; }
 }

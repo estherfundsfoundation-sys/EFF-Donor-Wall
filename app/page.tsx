@@ -11,7 +11,7 @@ export default async function Home() {
       <header className="nav">
         <a className="brand" href="https://www.estherfundsfoundation.org">
           <Image
-            src="/eff-logo.png"
+            src="/eff-foundation-logo.png"
             alt="Esther Funds Foundation — Every Future Fulfilled"
             width={500}
             height={500}
@@ -53,7 +53,7 @@ export default async function Home() {
 
       <section className="wall" aria-labelledby="wall-title">
         <p className="eyebrow">OUR COMMUNITY OF BELIEVERS</p>
-        <h2 id="wall-title">The EFF Donor Wall</h2>
+        <h2 id="wall-title">Meet the donors helping us prevent college dropouts.</h2>
         <p className="intro">
           This wall updates from Givebutter and recognizes only donors who
           choose public acknowledgment. Gift amounts and private contact
