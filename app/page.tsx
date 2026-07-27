@@ -39,13 +39,15 @@ export default async function Home() {
             Give &amp; join the wall
           </a>
         </div>
-        <div className="hero-badge">
-          <Image
-            src="/eff-logo.png"
-            alt="Esther Funds Foundation"
-            width={500}
-            height={500}
-          />
+        <div className="hero-community">
+          <span className="community-mark" aria-hidden="true">✦</span>
+          <p className="eyebrow">COLLEGE RETENTION MOVEMENT</p>
+          <h2>Meet the donors helping students stay enrolled.</h2>
+          <p>
+            Every name on this wall represents someone who chose to stand
+            behind a student’s future.
+          </p>
+          <a href="#wall-title">See our donor community →</a>
         </div>
       </section>
 
