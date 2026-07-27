@@ -1,4 +1,5 @@
 import { getPublicSupporters, recognitionLevels } from "@/lib/givebutter";
+import Image from "next/image";
 
 const GIVE_URL = "https://givebutter.com/estherfundsfoundation";
 
@@ -9,7 +10,13 @@ export default async function Home() {
     <main>
       <header className="nav">
         <a className="brand" href="https://www.estherfundsfoundation.org">
-          EFF <span>DONOR WALL</span>
+          <Image
+            src="/eff-logo.png"
+            alt="Esther Funds Foundation — Every Future Fulfilled"
+            width={500}
+            height={500}
+          />
+          <span>DONOR WALL</span>
         </a>
         <a className="give" href={GIVE_URL}>
           Make a Gift
@@ -32,10 +39,14 @@ export default async function Home() {
             Give &amp; join the wall
           </a>
         </div>
-        <div className="hero-badge" aria-hidden="true">
-          <span>EVERY FUTURE</span>
-          <strong>FULFILLED</strong>
-          <span>ESTHER FUNDS FOUNDATION</span>
+        <div className="hero-badge">
+          <Image
+            src="/eff-logo.png"
+            alt="Esther Funds Foundation"
+            width={500}
+            height={500}
+          />
+          <span>EVERY FUTURE FULFILLED</span>
         </div>
       </section>
 
