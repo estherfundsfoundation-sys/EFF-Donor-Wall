@@ -46,7 +46,6 @@ export default async function Home() {
             width={500}
             height={500}
           />
-          <span>EVERY FUTURE FULFILLED</span>
         </div>
       </section>
 

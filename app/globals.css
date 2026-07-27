@@ -36,8 +36,8 @@ a:focus-visible { outline: 3px solid #f2c94c; outline-offset: 4px; }
   color: var(--purple);
   text-decoration: none;
 }
-.brand img { width: 180px; height: 58px; object-fit: contain; object-position: left center; }
-.brand span { font-size: 14px; letter-spacing: 2px; margin-left: 9px; }
+.brand img { width: 64px; height: 64px; object-fit: contain; }
+.brand span { font-size: 14px; letter-spacing: 2px; }
 .give, .primary {
   background: var(--purple);
   color: var(--white);
@@ -71,21 +71,17 @@ a:focus-visible { outline: 3px solid #f2c94c; outline-offset: 4px; }
 .lede { max-width: 660px; font-size: 21px; line-height: 1.6; margin-bottom: 38px; }
 .primary { display: inline-block; background: var(--white); color: var(--purple); }
 .hero-badge {
-  aspect-ratio: 1;
-  border: 2px solid #ffffff88;
-  border-radius: 50%;
+  width: min(100%, 430px);
+  border: 1px solid #ffffff99;
+  border-radius: 28px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  box-shadow: 0 0 0 18px #ffffff0a, 0 30px 80px #18043166;
-  transform: rotate(3deg);
-  background: #ffffffee;
-  padding: 15%;
+  box-shadow: 0 30px 80px #18043166;
+  background: var(--white);
+  padding: 22px;
 }
 .hero-badge img { width: 100%; height: auto; object-fit: contain; }
-.hero-badge span { font-size: 11px; letter-spacing: 2px; margin-top: 10px; color: var(--purple); font-weight: 900; }
 .wall, .levels { padding: 100px 7vw; text-align: center; }
 .wall h2, .levels h2, .recognition h2 {
   font-family: Georgia, serif;
@@ -150,7 +146,7 @@ footer a { color: var(--lavender); }
 
 @media (max-width: 900px) {
   .hero, .recognition { grid-template-columns: 1fr; }
-  .hero-badge { max-width: 360px; width: 100%; margin: auto; }
+  .hero-badge { max-width: 360px; margin: auto; }
   .grid { grid-template-columns: repeat(2, 1fr); }
   .level-grid { grid-template-columns: repeat(2, 1fr); }
 }
